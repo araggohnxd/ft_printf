@@ -2,3 +2,7 @@ a.out
 .normignore
 .vscode/
 tests/
+libft/
+ft_printf_tester/
+printfTester/
+pft/
