@@ -6,7 +6,7 @@
 /*   By: maolivei <maolivei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 21:18:51 by maolivei          #+#    #+#             */
-/*   Updated: 2022/04/15 13:00:29 by maolivei         ###   ########.fr       */
+/*   Updated: 2022/04/15 17:35:43 by maolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 char	*ft_itoa_base(t_ulong n, char *base)
 {
 	char		*arr;
-	t_ulong		num;
-	size_t		num_size;
 	size_t		base_size;
+	size_t		num_size;
+	t_ulong		num;
 
 	num = n;
 	num_size = 1;

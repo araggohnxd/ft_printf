@@ -6,7 +6,7 @@
 /*   By: maolivei <maolivei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 16:39:11 by maolivei          #+#    #+#             */
-/*   Updated: 2022/04/15 13:35:58 by maolivei         ###   ########.fr       */
+/*   Updated: 2022/04/15 17:39:03 by maolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@
 # define PERCENT 8
 
 // type definitions
-typedef unsigned long	t_ulong;
-typedef unsigned int	t_uint;
+typedef unsigned int		t_uint;
+typedef unsigned long		t_ulong;
 
 // ft_printf
 int		ft_printf(const char *format, ...);
@@ -40,8 +40,8 @@ int		ft_printf(const char *format, ...);
 // handlers
 int		ft_handler_character(char character);
 int		ft_handler_decimal(int decimal);
-int		ft_handler_hex_lower(t_ulong num);
-int		ft_handler_hex_upper(t_ulong num);
+int		ft_handler_hex_lower(t_uint num);
+int		ft_handler_hex_upper(t_uint num);
 int		ft_handler_percent(void);
 int		ft_handler_pointer(t_ulong pointer_size);
 int		ft_handler_string(char *string);

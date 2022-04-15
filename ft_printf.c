@@ -6,7 +6,7 @@
 /*   By: maolivei <maolivei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 16:39:10 by maolivei          #+#    #+#             */
-/*   Updated: 2022/04/15 12:59:47 by maolivei         ###   ########.fr       */
+/*   Updated: 2022/04/15 17:37:47 by maolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ static int	ft_handle_this(int type, va_list ap, size_t *size)
 	else if (type == UINT)
 		*size += ft_handler_unsigned(va_arg(ap, t_uint));
 	else if (type == HEX_L)
-		*size += ft_handler_hex_lower(va_arg(ap, t_ulong));
+		*size += ft_handler_hex_lower(va_arg(ap, t_uint));
 	else if (type == HEX_U)
-		*size += ft_handler_hex_upper(va_arg(ap, t_ulong));
+		*size += ft_handler_hex_upper(va_arg(ap, t_uint));
 	else if (type == PERCENT)
 		*size += ft_handler_percent();
 	else
