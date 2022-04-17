@@ -6,7 +6,7 @@
 /*   By: maolivei <maolivei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 16:39:11 by maolivei          #+#    #+#             */
-/*   Updated: 2022/04/15 17:39:03 by maolivei         ###   ########.fr       */
+/*   Updated: 2022/04/17 19:28:55 by maolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,25 @@
 # include <unistd.h>
 # include <stdarg.h>
 
-// macros
+// macros and enumerators
 # define HEX_BASE_LOWER "0123456789abcdef"
 # define HEX_BASE_UPPER "0123456789ABCDEF"
-# define INT 1
-# define CHAR 2
-# define STR 3
-# define PTR 4
-# define UINT 5
-# define HEX_L 6
-# define HEX_U 7
-# define PERCENT 8
+
+enum e_bool {
+	FALSE,
+	TRUE
+};
+
+enum e_types {
+	INT = 2,
+	CHAR,
+	STR,
+	PTR,
+	UINT,
+	HEX_L,
+	HEX_U,
+	PERCENT
+};
 
 // type definitions
 typedef unsigned int		t_uint;

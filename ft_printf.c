@@ -6,7 +6,7 @@
 /*   By: maolivei <maolivei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 16:39:10 by maolivei          #+#    #+#             */
-/*   Updated: 2022/04/15 17:37:47 by maolivei         ###   ########.fr       */
+/*   Updated: 2022/04/17 19:26:45 by maolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,14 @@ static int	ft_handle_this(int type, va_list ap, size_t *size)
 	else if (type == PERCENT)
 		*size += ft_handler_percent();
 	else
-		return (0);
-	return (1);
+		return (FALSE);
+	return (TRUE);
 }
 
 static int	ft_get_arg_type(char type)
 {
 	if (!type)
-		return (0);
+		return (FALSE);
 	if (type == 'd' || type == 'i')
 		return (INT);
 	else if (type == 'c')
@@ -55,7 +55,7 @@ static int	ft_get_arg_type(char type)
 		return (HEX_U);
 	else if (type == '%')
 		return (PERCENT);
-	return (0);
+	return (FALSE);
 }
 
 int	ft_printf(const char *format, ...)
